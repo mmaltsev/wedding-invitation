@@ -1,0 +1,1 @@
+<svg> <filter id="watercolorFilter"> <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" /> <feDiffuseLighting lighting-color="#fff" surfaceScale="2"> <feDistantLight azimuth="45" elevation="60" /> </feDiffuseLighting> </filter> </svg>

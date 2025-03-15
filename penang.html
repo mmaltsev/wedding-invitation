@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+  <head>
+    <title>The wedding of Sherilyn & Maxim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__content">
+        <!-- <img class="main__content__wreath" src="fonts/floral_wreath_bg w fonts.jpg" alt="Floral wreath" /> -->
+        <img class="main__content__wreath" src="test.png" alt="Floral wreath" />
+        <img class="main__content__wreath-extra" id="extraBg" src="floral_wreath_bg extra.png" alt="Floral wreath" />
+        <div class="main__content__top-text">
+          TOGETHER WITH THEIR FAMILIES
+          <br />
+          INVITE YOU TO THEIR WEDDING CELEBRATION
+        </div>
+        <div class="main__content__details">
+          <div class="main__content__details__day">
+            SUNDAY
+          </div>
+          <div class="main__content__details__date">
+            <div class="main__content__details__date__month">Jun</div>
+            <div class="main__content__details__date__day">1</div>
+            <div class="main__content__details__date__year">2025</div>
+          </div>
+          <div class="main__content__details__time">
+            AT 6 PM
+          </div>
+        </div>
+        <div class="main__content__bottom-text">
+          G HOTEL KELAWAI • FORUM ?
+          <br />
+          <a href="https://maps.app.goo.gl/hBFKEY8fVq7xPKdY6" target="_blank">
+            2 PERSIARAN MAKTAB • GEORGE TOWN
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="second-page">
+      <div class="second-page__transition">
+        <div class="second-page__transition__border"></div>
+        <div></div>
+      </div>
+      <div class="second-page__title">About Celebration</div>
+      <div class="second-page__content">
+        <div class="second-page__content__img-mobile"></div>
+        <div class="second-page__content__text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          Aenean commodo ligula eget dolor. Aenean massa.
+          Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+          Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+          Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          Maecenas nec odio et ante tincidunt tempus. 
+          Maecenas nec odio et ante tincidunt tempus. 
+          Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+        </div>
+        <div class="second-page__content__img-desktop"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let marginLeftVal = 400;
+  if (window.screen.width - 40 < marginLeftVal)
+    marginLeftVal = window.screen.width - 40;
+  document.getElementById('extraBg').style.marginLeft = `-${marginLeftVal}px`;
+</script>
+<style>
+  @font-face {
+    font-family: 'Montserrat Regular';
+    src: url('Montserrat-Regular.ttf');
+  }
+  body {
+    margin: 0;
+  }
+  .main {
+    background-color: #fefefe;
+    background-image: url('paper_bg.png');
+  }
+  .main__content {
+    text-align: center;
+    padding: 25px 20px 40px 20px;
+    font-family: 'Montserrat Regular', serif;
+    letter-spacing: 0.06em;
+    font-size: 0.9em;
+  }
+  .main__content__wreath {
+    width: 100%;
+    max-width: 400px;
+  }
+  .main__content__wreath-extra {
+    position: absolute;
+    width: calc(100% - 40px);
+    max-width: 400px;
+    opacity: 0.1;
+    top: 25px;
+  }
+  .main__content__top-text {
+    margin-top: 50px;
+    line-height: 1.8em;
+  }
+  .main__content__bottom-text {
+    line-height: 1.8em;
+  }
+  .main__content__details {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 470px;
+  }
+  .main__content__details__day,
+  .main__content__details__time {
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .main__content__details__date {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__content__details__date__day {
+    color: #cc9d71;
+    font-size: 2.3em;
+  }
+  .main__content__bottom-text > a {
+    color: #8e9d7b;
+  }
+  .second-page {
+    padding: 25px 20px 40px 20px;
+    text-align: center;
+    background-color: #f7d7d5;
+  }
+  .second-page__transition {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  .second-page__transition__border {
+    border-right: 1px solid black;
+  }
+  .second-page__title {
+    font-family: 'Montserrat Regular', serif;
+    margin-top: 5px;
+    font-size: 2em;
+    line-height: 2em;
+  }
+  .second-page__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .second-page__content__text {
+    width: 50%;
+  }
+  .second-page__content__img-mobile {
+    display: none;
+  }
+  .second-page__content__img-desktop {
+    display: initial;
+    background-image: url('venue.jpg');
+    background-position: top;
+    width: 50%;
+    height: 250px;
+    max-width: 200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  @media screen and (max-width: 720px) {
+    .second-page__content {
+      flex-direction: column;
+    }
+    .second-page__content__text {
+      width: 100%;
+    }
+    .second-page__content__img-mobile {
+      display: initial;
+      background-image: url('venue.jpg');
+      background-position: center;
+      height: 100px;
+      width: 100%;
+      max-width: 400px;
+      border-top-left-radius: 80px;
+      border-top-right-radius: 80px;
+      margin-bottom: 25px;
+      margin-top: 10px;
+    }
+    .second-page__content__img-desktop {
+      display: none;
+    }
+  }
+</style>
