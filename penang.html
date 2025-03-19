@@ -30,10 +30,13 @@
           </div>
         </div>
         <div class="main__content__bottom-text">
-          G HOTEL KELAWAI • FORUM ?
+          G HOTEL KELAWAI • FORUM 5 & 6, Level 2
           <br />
           <a href="https://maps.app.goo.gl/hBFKEY8fVq7xPKdY6" target="_blank">
-            2 PERSIARAN MAKTAB • GEORGE TOWN
+            <img src="pin.png" alt="Map pin" /></a>
+          <a
+            href="https://maps.app.goo.gl/hBFKEY8fVq7xPKdY6"
+            target="_blank">2 PERSIARAN MAKTAB • GEORGE TOWN
           </a>
         </div>
       </div>
@@ -46,15 +49,28 @@
       <div class="second-page__title">About Celebration</div>
       <div class="second-page__content">
         <div class="second-page__content__img-mobile"></div>
-        <div class="second-page__content__text">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          Aenean commodo ligula eget dolor. Aenean massa.
-          Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-          Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-          Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          Maecenas nec odio et ante tincidunt tempus. 
-          Maecenas nec odio et ante tincidunt tempus. 
-          Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+        <div class="second-page__content__text"  style="text-align: left; line-height: 1.5em;">
+          <h3>Location</h3>
+          We are gonna celebrate our wedding at the hotel <u>G Hotel Kelawai</u>.
+          Please make sure to come to the right place, as there is another hotel with a similar name (<s>G Hotel Gurney</s>). 😊
+          <h3>Traditions</h3>
+          Our celebration will include some traditional ceremonies:
+          <ul>
+          <li style="margin-bottom: 10px;">
+            <strong>
+              <a href="https://en.wikipedia.org/wiki/Red_envelope" target="_blank">
+                Ang paos</a>
+            </strong>
+            — red envelopes filled with money, are given to bless the couple with prosperity and luck.
+            Instead of gifts, <u>please simply bring an Ang pao</u>.</li>
+          <li><strong>Tea ceremony</strong> — symbolizes respect and family unity, as the couple serves tea to elders in exchange for blessings and gifts.</li>
+        </ul>
+        <h3>Activities</h3>
+        
+        <p>
+          Please take a moment to sign our guestbook next to the stage in the dining hall and leave your wishes for us. Don't forget to snap a photo with the Instax camera and add it to the book—you know how much Sherilyn loves scrapbooking!
+        </p>
+        Thank you! ❤️
         </div>
         <div class="second-page__content__img-desktop"></div>
       </div>
@@ -130,6 +146,11 @@
   .main__content__bottom-text > a {
     color: #8e9d7b;
   }
+  .main__content__bottom-text > a > img {
+    width: 15px;
+    opacity: 0.6;
+    margin-bottom: -3px;
+  }
   .second-page {
     padding: 25px 20px 40px 20px;
     text-align: center;
@@ -154,20 +175,22 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 700px;
   }
   .second-page__content__text {
-    width: 50%;
+    width: 65%;
   }
   .second-page__content__img-mobile {
     display: none;
   }
   .second-page__content__img-desktop {
     display: initial;
-    background-image: url('venue.jpg');
+    background-image: url('hotel.jpeg');
     background-position: top;
-    width: 50%;
-    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 560px;
     max-width: 200px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -184,7 +207,7 @@
       background-image: url('venue.jpg');
       background-position: center;
       height: 100px;
-      width: 100%;
+      width: 95%;
       max-width: 400px;
       border-top-left-radius: 80px;
       border-top-right-radius: 80px;
